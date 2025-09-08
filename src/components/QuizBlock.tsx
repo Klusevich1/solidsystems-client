@@ -146,6 +146,7 @@ const QuizBlock: React.FC<QuizBlockProps> = ({
     };
 
     try {
+      console.log(JSON.stringify(payload));
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_SERVER_URL}/application`,
         {
@@ -162,16 +163,16 @@ const QuizBlock: React.FC<QuizBlockProps> = ({
         throw new Error(`Ошибка: ${response.statusText}`);
       } else {
         setCongratulations(true);
-        if (typeof window !== "undefined") {
-          if (!window.__formSubmitPushed) {
-            window.__formSubmitPushed = true;
-            window.dataLayer?.push({ event: "form_submit" });
-          }
+        // if (typeof window !== "undefined") {
+        //   if (!window.__formSubmitPushed) {
+        //     window.__formSubmitPushed = true;
+        //     window.dataLayer?.push({ event: "form_submit" });
+        //   }
 
-          if (typeof window.ym === "function") {
-            window.ym(99204054, "reachGoal", "form");
-          }
-        }
+        //   if (typeof window.ym === "function") {
+        //     window.ym(99204054, "reachGoal", "form");
+        //   }
+        // }
       }
 
       clearErrors();

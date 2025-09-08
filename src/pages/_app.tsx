@@ -42,7 +42,6 @@ export default function App({ Component, pageProps }: AppProps) {
           href="/apple-touch-icon.png"
         />
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Component {...pageProps} />
       <CookieModal />
