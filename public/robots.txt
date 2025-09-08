@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://solidsystem.by/
+
+# Sitemaps
+Sitemap: https://solidsystem.by/sitemap.xml
