@@ -12,7 +12,7 @@ const HeaderLogo = () => {
         src="/SolidHeader.svg"
         width={140}
         height={30}
-        className="w-[170px] md:w-[250px]"
+        className="w-[160px] xl:w-[200px] md:w-[180px]"
         alt="Digital Devils logo"
         priority={true}
       />

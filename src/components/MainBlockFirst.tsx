@@ -28,7 +28,7 @@ const MainBlockFirst: React.FC = () => {
   return (
     <>
       <StandardMarginsLayout
-        styles="lg:mt-[55px] mt-[50px] bg-black"
+        styles="xlg:mt-[52px] mt-[50px] bg-black"
       >
         <div className="flex flex-row gap-[120px] py-[40px] xlg:bg-none bg-[url(/mainblockimg.png)] bg-contain bg-no-repeat bg-center bg-black/60 bg-blend-darken">
           <div className="xlg:block hidden max-w-[390px] min-w-[33%]">
